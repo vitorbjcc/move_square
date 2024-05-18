@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 007</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        function createCanvas()
+        {
+            var canvas = $("#canvas");
+
+            if (canvas.length == 0)
+            {
+                canvas = $('<canvas id="canvas" width="250" height="200"></canvas>');
+                canvas.css("border", "1px solid black");
+
+                $("body").append(canvas);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Test 007</h1>
+    <h2>Canvas Move Square</h2>
+    <hr>
+    <script src="./script.js"></script>
+</body>
+</html>
